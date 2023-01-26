@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a272bcb024.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">Laptop
+        </div>
+
+        <ul class="menu-list">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+
+        <ul class="social-list">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+    </header>
+
+    <div class="sidebar">
+        <ul class="img-slider">
+            <li><img src="small_dell.png" onclick="imgSlider('dell.png');changeCircleColor('#27262e')"></li>
+            <li><img src="small_hp.png" onclick="imgSlider('hp.png');changeCircleColor('#76747F')"></li>
+            <li><img src="small_acer.png" onclick="imgSlider('acer.png');changeCircleColor('#D3D5E4')"></li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+        <p class="title">Powerful, Portable and Stylish: Meet Our Latest Laptops</p>
+        <p class="small-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis culpa at nihil
+            shit! Dignissimos, doloremque.</p>
+    </div>
+
+    <div class="imgBox">
+        <img src="dell.png" class="laptop">
+    </div>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.laptop').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
